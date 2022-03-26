@@ -57,7 +57,7 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            target.x = 200 # Los objetivos no detienen el juego al salir por el lado izquierdo, sino que se reposicionan hasta la derecha.
 
     ontimer(move, 50)
 
